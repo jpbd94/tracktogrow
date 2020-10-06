@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Pablo Briceno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="main">
+    
+    <nav>
+      <div class="logo">
+        <img src="">
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Coding Challenges</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+    <div class="information">
+      <div class="overlay"></div>
+      <img src="images/circle-cropped.png" class="JP">
+      <div id="circle">
+        <div class="feature one">
+          <img src="">
+          <div>
+            <h1>FullStack Developer</h1>
+            <p>Self-taught programmer: HTML, CSS, JavaScript, C#</p>
+          </div>
+        </div>
+        <div class="feature two">
+          <img src="">
+          <div>
+            <h1>Lab Amazon AWS</h1>
+            <p>Containerized environments and cloud monitoring tools</p>
+          </div>
+        </div>
+        <div class="feature three">
+          <img src="">
+          <div>
+            <h1>Security by Design</h1>
+            <p>Authentication/Authorization and encryptio </p>
+          </div>
+        </div>
+        <div class="feature four">
+          <img src="">
+          <div>
+            <h1>Security by Design</h1>
+            <p>Authentication/Authorization and encryption</p>
+          </div>
+        </div> 
+      </div>
+
+    </div>
+
+    <div class="controls">
+      <img src="images/arrow up.png" id="up">
+      <h3>Skills</h3>
+      <img src="images/arrow down.jpg" id="down">
+    </div>
+
+  </div>
+
+<script>
+  var circle = document.getElementById("circle")
+  var up = document.getElementById("up")
+  var down = document.getElementById("down")
+
+  var rotateValue = circle.style.transform;
+  var rotateSum;
+
+  up.onclick = function(){
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+  }
+
+  down.onclick = function(){
+    rotateSum = rotateValue + "rotate(90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+  }
+
+</script>
+
+</body>
+</html>
